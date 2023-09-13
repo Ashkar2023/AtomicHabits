@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>James Clear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins&display=swap');
+        .rotate{
+            transform: rotateZ(-3deg) translateY(0px);
+        }
+        .form-control::placeholder{
+            color: black;
+            opacity: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top p-3" style="background-color: antiquewhite;">
+        <div class="container-fluid">
+            
+            <a href="#intro" class="" style="text-decoration: none;">
+                <span class="navbar-brand text-dark" style="font-family:'poppins';">
+                    James Clear</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse text-center" id="main-nav" style="
+            font-family: montserrat;">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a href="#topics" class="nav-link">Topics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <button type="button" class="nav-item d-none d-md-inline border-0 rounded-5 bg-warning">
+                        <a href="#pricing" class="btn nav-link" style="color: black;">Buy now</a>
+                    </button>
+                </ul>
+            </div>
+        
+        </div>
+    </nav>
+
+
+    <!--section intro-->
+
+    <section id="intro">
+        <div class="container-md my-5 pt-5">
+            <div class="row md-justify-content-center align-items-center">
+                <div class="col-md-5 me-5 col-lg-4 d-none d-md-block">
+                    <img class="rotate pt-3 img-fluid" src="assets/PngItem_1361889.png" alt="book">
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <div>
+                        <h1 class="display-2">THE BEST SELLER</h1>
+                        <h1 class="display-5 text-warning">India has a new world bestseller author</h1>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rerum corporis animi voluptatum similique dicta repudiandae neque quae nemo porro nesciunt laboriosam, sunt eveniet itaque sint beatae vitae amet iusto.</p>
+                    <a href="#pricing" class="btn btn-warning btn-lg">Buy now</a>
+                    <a href="#sidebar" class="d-none d-md-inline" data-bs-toggle="offcanvas" style="text-decoration: none;color:lightblue;margin-left: 20px;">Browse my other books</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- topics -->
+    
+    <section id="topics" class="py-5" style="background-color: antiquewhite;">
+        <div class="container-lg" >
+            
+            
+            <div class="row mx-5 justify-content-around align-items-center">
+                
+                
+                <div class="col-lg-6 col-md-4">
+                    <div class="accordion" id="chapters">
+                
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ac1">
+                                    #1: I am just starting out.
+                                </button>
+                            </h2>
+                            <div id="ac1" class="accordion-collapse collapse show" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a perspiciatis quaerat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ac2">
+                                    #2: I work.
+                                </button>
+                            </h2>
+                            <div id="ac2" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a perspiciatis quaerat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ac3">
+                                    #3: I conquer.
+                                </button>
+                            </h2>
+                            <div id="ac3" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a perspiciatis quaerat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block col-sm-3 ">
+                    <img class="img-fluid border-0 rounded-2 shadow-lg" src="assets/ah2.webp">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- review -->
+
+    <section id="reviews" class="bg-light text-center p-5">
+        
+        <div class="container-md">
+            <h2 class="display-5 mb-2"><i class="bi bi-stars me-2"></i>Reviews</h2>
+            <p class="lead mb-5">read our book reviews</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-12">
+                    <div class="list-group text-start">
+                        <div class="list-group-item bg-dark text-light">
+                            <h2>greatest book to change yourself.</h2>
+                            <p  class="ps-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam velit eligendi dignissimos, quasi ipsa exercitationem, illo minima accusamus, vero alias veritatis iure obcaecati?</p>
+                            <small class="text-warning"><span class="text-secondary fst-italic">review by</span> arun
+                                <i class="bi bi-star-fill ms-1"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </small>
+                        </div>
+                        <div class="list-group-item bg-dark text-light">
+                            <h2>good read.</h2>
+                            <p class="ps-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam velit eligendi dignissimos, quasi ipsa exercitationem, illo minima accusamus, vero alias veritatis iure obcaecati?</p>
+                            <small class="text-warning"><span class="text-secondary fst-italic">review by</span> ashkar
+                                    <i class="bi bi-star-fill ms-1"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                            </small>
+                        </div>
+                        <div class="list-group-item bg-dark text-light">
+                            <h2>lazy to active.</h2>
+                            <p class="ps-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam velit eligendi dignissimos, quasi ipsa exercitationem, illo minima accusamus, vero alias veritatis iure obcaecati?</p>
+                            <small class="text-warning"><span class="text-secondary fst-italic">review by</span> bushara
+                                <i class="bi bi-star-fill ms-1"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- pricing -->
+
+    <!-- pricing plans -->
+    <section id="pricing" class="py-5" style="background-color: antiquewhite;">
+        <div class="container-lg">
+
+            <div class="text-center mt-5">
+                <h2>Pricing Plans</h2>
+                <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+            </div>
+
+            <div class="row mb-5 align-items-center justify-content-center">
+
+                <div class="col-9 col-lg-3 col-xl-3 mt-5">
+                    <div class="card border-0 ">
+                        <div class="card-body text-center py-3">
+                            <h4 class="card-title">starter edition</h4>
+                            <p class="lead card-subtitle">e-book download only</p>
+                            <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#pricing" class="btn btn-outline-primary btn-lg mt-3">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-10 col-lg-3 mt-5">
+                    <div class="card border-2 border-primary">
+                            <div class="card-header text-center py-1 bg-warning">Most popular</div>
+                            <div class="card-body text-center py-5">
+                                <h4 class="card-title">complete edition</h4>
+                                <p class="lead card-subtitle">e-book download & updates</p>
+                                <p class="display-5 my-4 text-primary fw-bold">$16.99</p>
+                                <p class="card-text mx-5 text-muted d-none d-lg-block">ipsusfasdfasdfasfamet consectetur adipisicing elit.</p>
+                                <a href="#pricing" class="btn btn-outline-primary btn-lg mt-3">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-9 col-lg-3 col-xl-3 mt-5">
+                        <div class="card border-0 ">
+                        <div class="card-body text-center py-3">
+                            <h4 class="card-title">ultimate edition</h4>
+                            <p class="lead card-subtitle">downloads,updates & extras</p>
+                            <p class="display-5 my-4 text-primary fw-bold">$19.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#pricing" class="btn btn-outline-primary btn-lg mt-3">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+
+        </div>
+
+    </section>
+
+    <!-- get in touch -->
+
+    <section id="getintouch" class="bg-light py-5">
+        <div class="container shadow rounded-5 col-md-8 py-5" >
+            <div class="text-center">
+                <h2 >Get in touch</h2>
+                <p>Need more info? Contact Directly</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-10">
+                    <form>
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill mx-2"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control">
+                        </div>
+
+                        <label for="email" class="form-label">Email:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text"><i class="bi bi-envelope-fill mx-2"></i></span>
+                            <input type="email" class="form-control">
+                        </div>
+
+                        <label for="subject" class="form-label"> Topic of Concern?</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-text-fill mx-2"></i>
+                            </span>
+                            <select id="subject" class="form-select">
+                                <option value="none">-select-</option>
+                                <option value="pricing">Pricing</option>
+                                <option value="content">Content</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="input-group-text">
+                                <span title="select the subject" data-bs-toggle="tooltip" data-bs-placement="right">
+                                    <i class="bi bi-question text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="form-floating my-5">
+                            <textarea class="form-control" id="query" placeholder="" style="height: 150px;"></textarea>
+                            <label for="query" class="form-label">Query</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- updates -->
+
+    <section id="updates" class="bg-secondary">
+        <div class="container-md py-5 justify-content-center text-center">
+            <h2 class="">Keep Updated</h2>
+            <p class="lead text-white">get all new updates from the author <strong style="color: burlywood;">James Clear</strong></p>
+            <button type="button" class="btn btn-warning text-muted" data-bs-toggle="modal" data-bs-target="#modal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-muted">
+                    <h2 class="modal-title">Sign-up for updates</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="lead">You will recieve all updates in your mail</p>
+                    <form>
+                        <span><label for="e-mail" class="form-label" ></label>
+                        <input type="email" id="e-mail" class="form-control" placeholder="yourmail@server.com"></span>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-start" id="sidebar" tabindex="-1">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title">My other Books</h2>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group ">
+                <div class="list-item border border-warning p-3">
+                    <h4><li>3-2-1 newsletter</li></h4>
+                    <p><i>“The most wisdom per word of any newsletter on the web.”</i></p>
+                    <p>The 3-2-1 Newsletter is one of the most popular newsletters in the world. Every Thursday, the latest issue is sent to over 2,000,000 people. Each message includes 3 short ideas from me, 2 quotes from others, and 1 question for you to ponder.</p>
+                </div>
+                <div class="list-item border border-warning p-3">
+                    <h4><li>atomic habits</li></h4>
+                    <p><i>“The most wisdom per word of any newsletter on the web.”</i></p>
+                    <p>The 3-2-1 Newsletter is one of the most popular newsletters in the world. Every Thursday, the latest issue is sent to over 2,000,000 people. Each message includes 3 short ideas from me, 2 quotes from others, and 1 question for you to ponder.</p>
+                </div>
+            </div>            
+            
+            <div class="dropdown mt-3">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Choose one
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">3-2-1 newsletter</li>
+                    <hr style="margin:0px;">
+                    <li class="dropdown-item">Atomic habits</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html> 
